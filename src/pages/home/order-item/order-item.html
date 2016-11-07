@@ -1,0 +1,23 @@
+<div class="order-item">
+
+  <div class="order-info">
+    <p>{{ order.type }}</p>
+    <p>{{ order.date | date: "h:mm a - dd MMM"}}</p>
+    <p>{{ order.number }}</p>
+  </div>
+
+
+  <div class="order-details">
+    <div class="customer-name">
+      {{ order.customer_name }}
+    </div>
+    <div class="product-details">
+      {{ order.price | currencyTHB }}
+      <img src="assets/img/divider.png"/>
+      {{ order.product_count }}
+      <img src="assets/img/divider.png"/>
+      <img src="assets/img/{{ order.payment_method }}.png" class="payment-method"/>
+    </div>
+  </div>
+
+</div>

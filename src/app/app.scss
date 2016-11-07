@@ -1,0 +1,25 @@
+
+.logoImage {
+  margin-top: 8px;
+  max-height: 20px;
+}
+.chatbubble{
+  width: 20px;
+}
+.hamburger{
+  width: 22px;
+}
+.back-button{
+  color: black !important;
+  .button-inner{
+    .button-inner{
+      ion-icon {
+        content:url(../assets/img/arrow3_back.png);
+        width: 22px;
+      }
+      span{
+        display: none;
+      }
+    }
+  }
+}

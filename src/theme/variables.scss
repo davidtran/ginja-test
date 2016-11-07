@@ -1,0 +1,178 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/v2/theming/
+@import "ionic.globals";
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
+
+$text-color:        #000;
+$background-color:  #fff;
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:    #e5313a,
+  secondary:  #4bd863,
+  danger:     #f53d3d,
+  light:      #f4f4f4,
+  dark:       #222,
+  enablecolor:   #4bd863,
+  disablecolor:  #e5313a
+);
+
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+$card-ios-border-radius: 0px;
+
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+$card-md-border-radius: 0px;
+
+// $toolbar-ios-title-font-size : 70%;
+// $toolbar-md-title-font-size : 70%;
+// $toolbar-wp-title-font-size : 70%;
+
+// $toolbar-md-height: 20px;
+// $toolbar-ios-height: 20px;
+// $toolbar-wp-height : 20px;
+
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+$card-wp-border-radius: 0px;
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/v2/ionicons/
+
+$ionicons-font-path: "../assets/fonts";
+@import "ionicons";
+
+// Fonts (Proxima Nova Alt for English and Kanit for Thai)
+//@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@font-face{
+  font-family: 'Proxima Nova Alt';
+  src: url('../assets/fonts/Mark Simonson - Proxima Nova Alt Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Proxima Nova Alt';
+  src: url('../assets/fonts/Mark Simonson - Proxima Nova Alt Regular Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face{
+  font-family: 'Proxima Nova Alt';
+  src: url('../assets/fonts/Mark Simonson - Proxima Nova Alt Light.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Proxima Nova Alt';
+  src: url('../assets/fonts/Mark Simonson - Proxima Nova Alt Light Italic.otf') format('opentype');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face{
+  font-family: 'Proxima Nova Alt';
+  src: url('../assets/fonts/Mark Simonson - Proxima Nova Alt Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Proxima Nova Alt';
+  src: url('../assets/fonts/Mark Simonson - Proxima Nova Alt Thin Italic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face{
+  font-family: 'Proxima Nova Alt';
+  src: url('../assets/fonts/Mark Simonson - Proxima Nova Alt Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Proxima Nova Alt';
+  src: url('../assets/fonts/Mark Simonson - Proxima Nova Alt Semibold Italic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face{
+  font-family: 'Proxima Nova Alt';
+  src: url('../assets/fonts/Mark Simonson - Proxima Nova Alt Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Proxima Nova Alt';
+  src: url('../assets/fonts/Mark Simonson - Proxima Nova Alt Bold Italic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face{
+  font-family: 'Proxima Nova Alt';
+  src: url('../assets/fonts/Mark Simonson - Proxima Nova Alt Extrabold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Proxima Nova Alt';
+  src: url('../assets/fonts/Mark Simonson - Proxima Nova Alt Extrabold Italic.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face{
+  font-family: 'Proxima Nova Alt';
+  src: url('../assets/fonts/Mark Simonson - Proxima Nova Alt Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Proxima Nova Alt';
+  src: url('../assets/fonts/Mark Simonson - Proxima Nova Alt Black Italic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@import 'https://fonts.googleapis.com/css?family=Kanit:100,100i,200,200i,300,300i,400,400i';
+
+$font-primary: "Proxima Nova Alt", "Kanit", Helvetica, Arial, sans-serif;
+$font-extra-bold: 800;
+$font-bold: 700;
+$font-semibold: 600;
+$font-regular: 400;
+$font-light: 200;

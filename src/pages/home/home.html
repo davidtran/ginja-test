@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle right>
+        <img class="hamburger" [src]="image_hamburger">
+      </button>
+    <ion-title text-center>
+      <img class="logoImage" [src]="image_logo">
+    </ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only><img class="chatbubble" [src]="image_chatbubble"></button>
+    </ion-buttons>
+  </ion-navbar>
+
+  <div padding>
+    <ion-segment [(ngModel)]="segment" mode="md" (ngModelChange)="onOrderTypeChange($event)">
+      <ion-segment-button value="current" >
+        Orders
+      </ion-segment-button>
+      <ion-segment-button value="completed">
+        Completed
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+</ion-header>
+
+
+<!-- @TODO: add list view here -->
+<order-list></order-list>
+
+

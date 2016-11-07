@@ -1,0 +1,477 @@
+$skooter-margin-left: -3px;
+$skooter-img-size: 18px;
+
+home{
+  font-family: $font-primary !important;
+  .list-ios{
+    margin: 0;
+  }
+
+  ion-grid {
+    padding:0;
+    margin:0;
+  }
+
+  ion-col{
+    padding: 0;
+  }
+
+  ion-list.order-list {
+    ion-card {
+      box-shadow: none;
+      ion-card-content {
+        padding: 0 0 0 0;
+      }
+    }
+  }
+  .segment-button{
+    border-bottom-width: 0px !important;
+  }
+  .segment-md{
+    .segment-button {
+      color: $text-color;
+      font-weight: $font-extra-bold;
+    }
+  }
+  .segment-button.segment-activated{
+    border-width: 5px !important;
+    color: map-get($colors,primary);
+  }
+
+  .Centerer
+  {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+  }
+  .Centered
+  {
+      display: inline-block;
+      vertical-align: middle;
+      padding:3px;
+      max-width: 30px;
+  }
+
+  .active-orders{
+    .order-list {
+      margin: 0;
+      padding-bottom: 20px;
+    }
+
+    .order-list-type:nth-child(1){
+      background-color: #b3b4b4;
+    }
+
+    .order-list-type:nth-child(2){
+      background-color: #a2a2a2;
+    }
+
+    .order-list-type:nth-child(3){
+      background-color: #8d8d8d;
+    }
+
+    .list-header-ios{
+      border: none;
+    }
+
+    .listDivider {
+      text-align: center;
+      margin-bottom: -10px;
+      font-size: 2rem;
+      color:white;
+      font-weight: $font-bold;
+      letter-spacing: .3rem;
+    }
+
+    .favouriteImage {
+      max-width: 16px;
+      float:right;
+    }
+
+    .card-ios ion-card-content {
+      padding: 0;
+    }
+
+    .cardImage {
+      max-width: 12px;
+      display:inline;
+      margin-right: 5px;
+      vertical-align:middle;
+      padding-bottom: 2px;
+      .cardDeliveryImage {
+        max-width: 16px;
+      }
+    }
+
+
+    .pendingOrder{
+      .rightCardBottom{
+        border-top: none !important;
+        ion-grid{
+          margin-top: 0 !important;
+        }
+      }
+      .accepted-grid{
+        display: none;
+      }
+    }
+    .acceptedOrder, .deliveringOrder{
+      .leftCard{
+        padding-top: 25% !important;
+        padding-bottom: 25%;
+      }
+    }
+
+
+    .left-col{
+      border-right: 1px solid #ddd;
+      .leftCard {
+        position: relative;
+        text-align: center;
+        font-size: 1rem;
+        padding-top: 12px;
+
+        .leftCardStatus {
+
+          font-weight: $font-bold;
+        }
+
+        .leftCardDateTime {
+          display: block;
+          font-size: .8rem;
+        }
+
+        .leftCardReference {
+          display: block;
+          font-size: .8rem;
+          font-weight: $font-bold;
+        }
+
+
+
+        .leftCardAcceptedStatus {
+          display: block;
+          font-weight: $font-bold;
+        }
+      }
+    }
+
+
+    .right-col{
+      padding-left: 0;
+      padding-right: 0;
+      .rightCard {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: relative;
+        text-align: left;
+        color:black;
+        //margin-left: 8px;
+        font-size: 1.2rem;
+
+        //line-height: .2rem;
+        div{
+          img{
+            margin-left: 8px;
+          }
+        }
+        ion-grid{
+          ion-row{
+            ion-col{
+              ion-grid{
+                margin-top: 8px;
+              }
+            }
+          }
+        }
+        .rightCardTop {
+          display: block;
+          margin-bottom: 10px;
+          font-weight: $font-semibold;
+        }
+
+        .rightCardMiddle {
+          display: block;
+          margin-bottom: 10px;
+          .divider {
+            max-width: 3px;
+            display:inline;
+            margin-left: 6px;
+            margin-right: 6px;
+            vertical-align:middle;
+          }
+          .paymentImage {
+            max-width: 16px;
+            display:inline;
+            vertical-align:middle;
+          }
+        }
+
+        .rightCardBottom {
+          display: block;
+          border-top: 1px solid #ddd;
+          //img.cardImage{
+          .new-grid{
+            margin-left: $skooter-margin-left;
+            ion-row{
+              ion-col{
+                padding-left:0;
+                img{
+                  max-width: $skooter-img-size;
+                }
+              }
+            }
+          }
+          .rightCardTime {
+            color: red;
+            font-weight: $font-bold;
+          }
+          .accepted-grid{
+            margin-left: $skooter-margin-left;
+            .rightCardTime {
+              color: #49c14c;
+            }
+            padding: 0;
+            img.cardDeliveryImage{
+              width: $skooter-img-size;
+            }
+          }
+        }
+      }
+      .right-card-bottom-text{
+        padding-left: 3px !important;
+        color: #49c14c;
+      }
+      .rightCardOrder {
+        margin-left: 8px;
+      }
+      .right-card-carrier{
+        color: black;
+        font-weight: normal;
+        font-size: 1rem;
+      }
+
+      .rightCardSmallBold {
+        color:black;
+        font-weight: $font-bold;
+        font-size:6px;
+        display: block;
+      }
+
+      .rightCardBottomLeft {
+        display: block;
+        float:left;
+      }
+
+      .rightCardAcceptedTimeUnits {
+        //color: red;
+        font-weight: normal;
+        font-size: .8rem;
+      }
+
+      .rightCardAcceptedDelivery {
+        color: black;
+        font-weight: normal;
+        font-size:6px;
+      }
+    }
+
+
+    .leftCardDeliveringStatus {
+      display: block;
+      font-weight: $font-bold;
+    }
+
+    .rightCardDeliveringTime {
+      color:lightblue;
+      font-size: 10px;
+      font-weight: $font-bold;
+    }
+    .dispatched-message{
+      color: #20a2f8;
+      font-weight: $font-bold;
+    }
+  }
+
+
+
+  .completed-orders{
+
+    .card-ios{
+      margin: 0;
+      width: 100%;
+      ion-card-content {
+        padding: 0;
+      }
+    }
+
+
+    .cardImage {
+      max-width: 12px;
+      display:inline;
+      margin-right: 5px;
+      vertical-align:middle;
+      padding-bottom: 2px;
+    }
+    ion-card:first-child{
+      border-top: 1px solid #ddd;
+    }
+    ion-card{
+      border-bottom: 1px solid #ddd;
+    }
+
+    .left-col{
+      border-right: 1px solid #ddd;
+      padding-top: 5px;
+      padding-bottom: 15px;
+      .leftCard {
+        position: relative;
+        text-align: center;
+        font-size: 1rem;
+        //padding-top: 12px;
+
+        .leftCardCompletedRelative {
+          display: block;
+          font-weight: $font-light;
+          font-size: 1.2rem;
+          line-height: 1rem;
+        }
+
+        .leftCardCompletedDate {
+          display: block;
+          font-size: 1.8rem;
+          font-weight: $font-extra-bold;
+          color: map-get($colors,primary);
+          text-transform: uppercase;
+        }
+        .leftCardCompletedTime {
+          display: block;
+          font-size: 1rem;
+        }
+
+        .leftCardReference {
+          display: block;
+          font-size: .8rem;
+          font-weight: $font-bold;
+          margin-top: 8px;
+        }
+      }
+    }
+
+
+    .right-col{
+      padding-top: 5px;
+
+
+      .rightCard {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 18px;
+        position: relative;
+        text-align: left;
+        color:black;
+        //margin-left: 8px;
+        font-size: 1.2rem;
+
+        .rightCardTop {
+          display: block;
+          margin-bottom: 10px;
+          font-weight: $font-semibold;
+        }
+
+        .rightCardMiddle {
+          display: block;
+          margin-bottom: 10px;
+          .paymentImage {
+            max-width: 16px;
+            display:inline;
+            vertical-align:middle;
+          }
+        }
+
+        .rightCardBottom {
+          display: block;
+          .bike-completed{
+             margin-left: $skooter-margin-left;
+            img{
+              max-width: $skooter-img-size;
+            }
+          }
+          .completed-declined{
+            background-color: map-get($colors,primary);
+            width: 7rem;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: $font-bold;
+            padding-top: 1px;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+  .ginjaBox {
+    background-color: darkgray;
+    font-weight: $font-bold;
+    font-size: 8px;
+  }
+
+  .ginjaImage {
+    transform: rotate(-15deg);
+    margin-top:5px;
+    max-height: 60px;
+    margin-bottom: 5px;
+  }
+  .ninja-talk-bubble{
+    position: relative;
+  //width: 300px;
+  //height: 100px;
+  //padding: 0px;
+  //background: #6b6c6b;
+  //-webkit-border-radius: 9px;
+  //-moz-border-radius: 9px;
+  //border-radius: 9px;
+    height: 80px;
+    line-height: 80px;
+    background-color: #6b6c6b;
+    border-radius: 5px;
+    text-align: center;
+    //border: none;
+    :after {
+      content: '';
+      position: absolute;
+      border-style: solid;
+      border-width: 12px 15px 12px 0;
+      border-color: transparent #6b6c6b;
+      display: block;
+      width: 0;
+      z-index: 1;
+      margin-top: -12px;
+      left: -14px;
+      top: 50%;
+    }
+  }
+
+  .ginjaTalk {
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    font-size: 1rem;
+  }
+}
+
+
+.ion-page .header-ios [padding]{
+  padding: 0px 0px 0px 0px;
+  background-color: #fff;
+}
+
+.ion-page .content-ios .scroll-content{
+  padding: 16px 0px 0px 0px;
+  margin-top: 30px !important;
+}

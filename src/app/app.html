@@ -1,0 +1,14 @@
+<ion-menu side="right" persistent="true" [content]="content">
+    <ion-toolbar>
+        <ion-title>Vendor Console</ion-title>
+    </ion-toolbar>
+    <ion-content>
+        <ion-list>
+            <button ion-item *ngFor="let p of pages" (click)="openPage(p)">
+                {{p.title}}
+            </button>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>
